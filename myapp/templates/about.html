@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    About
+{% endblock title %}
+
+<!-- About Me Section -->
+{% block content %}
+<section class="about-me" id="about">
+    <h1 class="section__title section__title--about">
+    	Hi, I'm Aaron.
+    </h1>
+
+    <p class="section__subtitle section__subtitle--about">
+    	Aspiring Web Developer | Nike Part-Time Athlete
+    </p>
+    
+    <div class="about-me__body">
+        <p>I am recent graduate of California State University, Long Beach with a Bachelor's of Arts in Asian-American Studies. Right now, I am a student of Kickstart Coding, a coding bootcamp located in Oakland, CA and is currently teaching courses remotely!</p>
+
+        <p>I have always been interested with technology and how things work. I have been able to build multiple PC's, as well as my own, build a few website's and applications, such as a stock ticker utilizing React.</p>
+
+        <p>Currently, I work for Nike as a Sales Associate while coding as much as I can on my day's off. Some fun hobbies I do includes dancing, going to the gym or just relaxing and reading a good book.</p>
+    </div>
+
+    <img src="/static/img/headshot.jpg" alt="aaron headshot" class="about-me__img">
+</section>
+
+<!-- About Me  -->
+{% endblock content %}
