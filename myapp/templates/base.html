@@ -19,6 +19,7 @@
 
         <!-- CSS stylesheet page call -->
         <link href="/static/css/styles.css" type="text/css" rel="stylesheet">
+
         <title>
             AV - {% block title %}{% endblock %}
         </title>
@@ -41,6 +42,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href='{% url "portfolio" %}'>Portfolio</a>
+                  <a class="dropdown-item" href='{% url "extra" %}'>Dance</a>
                 </div>
             </li>
             <a class='nav-item nav-link' href='{% url "contact" %}'>Contact</a>
@@ -55,6 +57,7 @@
     </body>
 
     <footer class="footer-tag">
+        <a href="mailto:aaronvito97@gmail.com" class="footer_link">aaronvito97@gmail.com</a>
         (C) 2021 Aaron Vito (amvito.com)
     </footer>
 

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  Dance Projects
+{% endblock title %}
+
+<!-- Dance Portfolio -->
+{% block content %}
+
+  <section class="my-reel" id="extra-reel">
+    <h1 class="section__title section__title--reel">Dance Reel</h1>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <img src="/static/img/modal-feature.png" alt="feature video" class="portfolio-extra__main">
+        <p class="lead">Working with my the creative minds of my co-workers</p>
+       
+      </div>
+    </div>
+    
+
+    <p class="section__subtitle section__subtitle--reel">On my down time, I usually express my creative side through dance. </br>
+    Here are some of my favorite video's that I have done:</p>
+
+    <!-- Portfolio (Extras) item 01 -->
+    <div class="portfolio__extra">
+      <a href="#" class="portfolio-extra__item" data-toggle="modal" data-target="#myModal1">
+        <img src="/static/img/modal-img-1.png" alt="" class="portfolio-extra__img">
+      </a>
+
+    <!-- Portfolio (Extras) item 02 -->
+      <a href="#" class="portfolio-extra__item" data-toggle="modal" data-target="#myModal2">
+        <img src="/static/img/modal-img-2.png" alt="" class="portfolio-extra__img">
+      </a>
+
+    <!-- Portfolio (Extras) item 03 -->
+      <a href="#" class="portfolio-extra__item" data-toggle="modal" data-target="#myModal3">
+        <img src="/static/img/modal-img-3.png" alt="" class="portfolio-extra__img">
+      </a>
+
+    <!-- Portfolio (Extras) item 04 -->
+      <a href="#" class="portfolio-extra__item" data-toggle="modal" data-target="#myModal4">
+        <img src="/static/img/modal-img-4.png" alt="" class="portfolio-extra__img">
+      </a>
+
+    <!-- Portfolio (Extras) item 05 -->
+      <a href="#" class="portfolio-extra__item" data-toggle="modal" data-target="#myModal5">
+        <img src="/static/img/modal-img-5.png" alt="" class="portfolio-extra__img">
+      </a>
+
+    <!-- Portfolio (Extras) item 06 -->
+      <a href="#" class="portfolio-extra__item" data-toggle="modal" data-target="#myModal6">
+        <img src="/static/img/modal-img-6.png" alt="" class="portfolio-extra__img">
+      </a>
+
+    </div>
+
+<!-- Modal sections when clicking on the individual items -->
+    <!-- Extra Modal 1 Video -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe src="https://drive.google.com/file/d/1zXK6NiLAo5CFOnrw060CzBGaycJCU-0m/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Extra Modal 2 Video-->
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe class="video-modal" src="https://drive.google.com/file/d/1NZoyrixCM0MUKNFaOwPxbfWQDprKe0mp/preview" width="640" height="480" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Extra Modal 3 Video-->
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe class="video-modal" src="https://drive.google.com/file/d/1ayl3GQwb2d0yguC-BpKfPFvX8pHV_z8T/preview" width="640" height="480" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        <!-- Extra Modal 4 Video-->
+    <div class="modal fade" id="myModal4">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe src="https://drive.google.com/file/d/1PsUcAGonHNXMv7XopplWtfUNXMicn3-_/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Extra Modal 5 Video-->
+    <div class="modal fade" id="myModal5">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe class="video-modal" width="560" height="315" src="https://www.youtube.com/embed/BgROK_gs4G0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Extra Modal 6 Video-->
+    <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe class="video-modal" width="560" height="315" src="https://www.youtube.com/embed/trySvsvabWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
+{% endblock content %}
+

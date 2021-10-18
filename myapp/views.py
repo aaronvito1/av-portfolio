@@ -20,12 +20,24 @@ def about(request):
 	return render(request, "about.html", context)
 
 def portfolio(request):
-	print('portfolio page being visited')
-	context={
-
+	# content_html = open("apps/core/templates/portfolio.html").read()
+	print('Portfolio page being visited')
+	response = requests.get('https://api.github.com/users/aaronvito1/repos')
+	repos = response.json()
+	context = {
+		'github_repos': repos, 
 	}
 	return render(request, "portfolio.html", context)
 
+
+def extra(request):
+	# content_html = open("apps/core/templates/extra.html").read()
+	print('Extra page being visited')
+	context = {
+		# "content": content_html, 
+	}
+	return render(request, "extra.html", context)
+	
 def contact(request):
 	print('contact page being visited')
 	context={
