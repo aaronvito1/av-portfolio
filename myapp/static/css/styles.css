@@ -160,6 +160,13 @@ h3 { font-size: var(--fs-h3) }
   }
 }
 
+/* Portfolio Section */
+.portfolio {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center
+}
+
 
 /* Extras section */
 .my-reel {
@@ -187,27 +194,39 @@ h3 { font-size: var(--fs-h3) }
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.portfolio-extra__item {
+.portfolio-extra__item,
+.portfolio-extra__main: {
   background-color: var(--clr-dark);
   overflow: hidden;
 }
 
-.portfolio-extra__img {
+.portfolio-extra__img,
+.portfolio-extra__main {
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1);
     opacity: 250ms linear;
 }
 
-.portfolio-extra__img:focus {
+.portfolio-extra__img,
+.portfolio-extra__main:focus {
   position: relative;
   z-index: 2;
 }
 
 .portfolio-extra__img:hover,
+.portfolio-extra__main:hover,
 .portfolio-extra__item:focus .portfolio-extra__img {
   transform: scale(1.1);
   opacity: .75;
 
+}
+
+.modal-content {
+  background-color: black;
+}
+
+.modal-backdrop {
+   background-color: #94a8b3;
 }
 
 /* Contact Page */

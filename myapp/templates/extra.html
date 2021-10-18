@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-  Dance Projects
+  Dance Reel
 {% endblock title %}
 
 <!-- Dance Portfolio -->
@@ -10,18 +10,14 @@
 
   <section class="my-reel" id="extra-reel">
     <h1 class="section__title section__title--reel">Dance Reel</h1>
+        <p class="section__subtitle section__subtitle--reel">On my down time, I usually express my creative side through dance. </br>
+        Here are some of my favorite video's that I have done:</p>
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <img src="/static/img/modal-feature.png" alt="feature video" class="portfolio-extra__main">
-        <p class="lead">Working with my the creative minds of my co-workers</p>
-       
+        <img src="/static/img/modal-feature.png" alt="feature video" class="portfolio-extra__main" data-toggle="modal" data-target="#myModalMain">
       </div>
     </div>
-    
-
-    <p class="section__subtitle section__subtitle--reel">On my down time, I usually express my creative side through dance. </br>
-    Here are some of my favorite video's that I have done:</p>
 
     <!-- Portfolio (Extras) item 01 -->
     <div class="portfolio__extra">
@@ -57,13 +53,28 @@
     </div>
 
 <!-- Modal sections when clicking on the individual items -->
-    <!-- Extra Modal 1 Video -->
-    <div class="modal fade" id="myModal1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+    <!-- Feature video Modal Video -->
+        <div class="modal fade" id="myModalMain">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
+                <iframe src="https://drive.google.com/file/d/1vgJhsDLe41BiJ3DtcCGO-TXFKbpKg81e/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+                <p class="lead">Working with my the creative minds of my co-workers, I was able to participate in Nike's NAX (Nike Athlete Experience) dance compilation project. Major shoutout to Erick (@aecreatives), the main choreographer and Levi (@yinleeyagi) for his videography and lighting ideas.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Extra Modal 1 Video -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
+          <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body"> 
+                <h5 class="card-title">Neyo - Sexy Love 2021 Acoustic (Freestyle)</h5>
                 <iframe src="https://drive.google.com/file/d/1zXK6NiLAo5CFOnrw060CzBGaycJCU-0m/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+                <p class="lead">One of the few freestyles I was able to record during the beginning of 2021. I was a bit rusty as I haven't danced as much during the pandemic. Thank you to Two Car Studios for providing a safe space for dancers to create.</p>
             </div>
           </div>
         </div>
@@ -71,11 +82,13 @@
 
     <!-- Extra Modal 2 Video-->
     <div class="modal fade" id="myModal2">
-        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
+                <h5 class="card-title">Freestyle - madebyswavy (Crush Bootleg)</h5>
                 <iframe class="video-modal" src="https://drive.google.com/file/d/1NZoyrixCM0MUKNFaOwPxbfWQDprKe0mp/preview" width="640" height="480" allowfullscreen></iframe>
+                <p class="lead">Summer feel-good freestyle recorded by the talented @p.rxdriguez. (Check out his IG to see his videography)</p>
             </div>
           </div>
         </div>
@@ -83,11 +96,13 @@
 
     <!-- Extra Modal 3 Video-->
     <div class="modal fade" id="myModal3">
-        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
+                <h5 class="card-title">Sugar - Brockhampton (Choreography by Me)</h5>
                 <iframe class="video-modal" src="https://drive.google.com/file/d/1ayl3GQwb2d0yguC-BpKfPFvX8pHV_z8T/preview" width="640" height="480" allowfullscreen></iframe>
+                <p class="lead">PAC Modern Choreography nights allows individuals to showcase their creativity to the rest of the team, alumni, and guests!</p>
             </div>
           </div>
         </div>
@@ -95,11 +110,13 @@
 
         <!-- Extra Modal 4 Video-->
     <div class="modal fade" id="myModal4">
-        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
+                <h5 class="card-title">Vae Stapes - Be Your Last (Choreography by Me)</h5>
                 <iframe src="https://drive.google.com/file/d/1PsUcAGonHNXMv7XopplWtfUNXMicn3-_/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+                <p class="lead">In this project, I was asked to make choreography for a music video and teach it to my friends. This project couldn't have happened without @p.rxdriguez vision and his eye behind the camera! Unfortunately, the project was not able to be completed but the choreography was able to be filmed.</p>
             </div>
           </div>
         </div>
@@ -107,11 +124,13 @@
 
     <!-- Extra Modal 5 Video-->
     <div class="modal fade" id="myModal5">
-        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
+                <h5 class="card-title">Bridge Dance Competition 2019 - PAC Modern</h5>
                 <iframe class="video-modal" width="560" height="315" src="https://www.youtube.com/embed/BgROK_gs4G0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="lead">Last major competition with a team. It was a great oppurtunity to grow and hone my dancing skills while networking with alumni and team members.</p>
             </div>
           </div>
         </div>
@@ -119,11 +138,13 @@
 
     <!-- Extra Modal 6 Video-->
     <div class="modal fade" id="myModal6">
-        <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl modal-fullscreen-lg-down">
           <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
+                <h5 class="card-title">Karatong Subli - Long Beach's 33rd Pilipino Culture Night </h5>
                 <iframe class="video-modal" width="560" height="315" src="https://www.youtube.com/embed/trySvsvabWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="lead">One of the three dances that my co-coordinator and I taught and blocked to club members for the annual Pilipino American Coalition's (PAC) Cultural Night.</p>
             </div>
           </div>
         </div>

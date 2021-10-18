@@ -11,5 +11,26 @@
       <h2>Portfolio</h2>
       <h3>Here are some projects I have been working on</h3>
     <!-- Header End -->
+
+    <div class="card-deck extra-deck container-fluid">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="card">
+              <img class="card-img-top" src="/static/imgs/bakeshack_home.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Bakeshack</strong></h5>
+                <p class="card-text">Currently Building using Webflow's CMS.</p>
+                <a class="link-primary" href="https://preview.webflow.com/preview/bakeshack-project?utm_medium=preview_link&utm_source=designer&utm_content=bakeshack-project&preview=9573168b7d9cc3fe0f5daeb713215ade&mode=preview">View Page</a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <a href="https://github.com/aaronvito1">
+            {% for repo in github_repos %}
+            <div class="card shadow">
+              <div class="card-header">
+                <a href="{{ repo.html_url }}"> {{ repo.name }} </h6>
+              </div>
+            </div>
+            {% endfor %}
 </div>
 {% endblock content %}
