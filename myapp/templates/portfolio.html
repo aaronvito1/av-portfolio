@@ -6,21 +6,24 @@
 {% endblock title %}
 
 {% block content %}
-<section class="container portfolio-header">
+<section class="portfolio" id="portfolio">
  <!-- Header Start -->
-      <h2>Portfolio</h2>
-      <h3>Here are some projects I have been working on</h3>
+    <h1 class="section__title section__title--portfolio">Portfolio</h1>
+    <h2 class="section__subtitle section__subtitle--portfolio">Here are projects that I have been working on or finsihed:</h2 >
     <!-- Header End -->
 
-            <!-- Card 3 -->
-            <a href="https://github.com/aaronvito1">
-            {% for repo in github_repos %}
-            <div class="card shadow">
-              <div class="card-header">
-                <a href="{{ repo.html_url }}"> {{ repo.name }} </h6>
-              </div>
-            </div>
-            {% endfor %}
+    <!-- Github Portfolio Section -->
+    <h3 class="section__subtitle_3">GitHub Section</h3>
+    {% for repo in github_repos %}
+    <div class="card shadow">
+      <div class="card-header">
+        <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+          <p>Created on: {{ repo.created_at }}</p>
+          <p>Updated: {{repo.updated_at }}</p>
+          <p>{{ repo.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
 </section>
 
 {% endblock content %}

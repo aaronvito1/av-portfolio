@@ -154,11 +154,24 @@ h3 { font-size: var(--fs-h3) }
 
 /* Portfolio Section */
 .portfolio {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  text-align: center
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  text-align: left
 }
 
+.section__title--portfolio {
+  text-align: center;
+}
+
+.section__subtitle--portfolio {
+  text-align: center;
+}
+
+.section__subtitle_3 {
+  font-size: var(--fs-h3);  
+  padding-top: 3em;
+  text-align: center;
+}
 
 /* Extras section */
 .my-reel {
